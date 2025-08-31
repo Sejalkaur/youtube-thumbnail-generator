@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+pnpm-lock.yaml
+package-lock.json
+
+# build
+dist
+build
+
+# env files
+.env
+frontend/.env
+backend/.env
+
+# system files
+.DS_Store
