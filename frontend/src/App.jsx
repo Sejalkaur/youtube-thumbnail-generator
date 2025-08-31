@@ -70,10 +70,13 @@ function App() {
     formData.append("outputFormat", outputFormat);
 
     try {
-      const response = await fetch("http://localhost:5000/upload", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://youtube-thumbnail-generator-m1hs.onrender.com/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       const data = await response.json();
 
       setChatMessages((prev) => [
